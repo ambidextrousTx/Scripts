@@ -1,0 +1,11 @@
+#! /bin/bash
+# Ambidextrous: Oct 30, 2012
+
+# Clean your Macports base and reclaim tons of space
+# Last ran: Oct 30, 2012. Stats: 8.6G - 6.7G
+
+# Clean: Delete intermediate files for every installed port
+sudo port clean --all installed
+
+# Uninstall inactive packages (older versions)
+sudo port -f uninstall inactive
